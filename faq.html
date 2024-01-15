@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Menu Bar -->
+    <div class="top-menu">
+        <div class="company-name">
+            <!-- <h1>Galaxy Guides</h1> -->
+            <img src="GG_Logo.jpg" alt="Logo" width="120">
+        </div>
+        <div class="navigation-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="guides.html">Meet the Guides</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 1: Big Image with Text Banner -->
+    <section class="panel big-image">
+        <div class="banner">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+    </section>
+
+    <!-- Section 2: FAQ Panel -->
+    <section class="panel faq-panel">
+        <ul class="faq-list">
+            <li class="faq-item" onclick="toggleAnswer('q1')">
+                <strong>How do I book a Galaxy Guide?</strong>
+                <div class="answer" id="q1">
+                    <p>Email us at booking@galaxy-guides.com! Reach out to us with a description of your event, your event's date, desired services, and your best contact info. We will return your message via email or call (your preference) and discuss a plan for your event.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q2')">
+                <strong>Who are the guides?</strong>
+                <div class="answer" id="q2">
+                    <p>While you can read short bios on each of our guides <a href="guides.html" target="_blank" style="text-decoration: none; color: blue;">here</a>, generally Galaxy Guides was founded by an astronomy graduate student with the vision of hiring fellow astronomy graduate students. Our guides are experts in their sub-fields of astronomy, currently working on active research to answer some of the biggest questions ever asked by humans. Our guides are also passionate about communicating science to the world and sharing the wonders of the universe with the public of all ages.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q3')">
+                <strong>What payment methods do you accept?</strong>
+                <div class="answer" id="q3">
+                    <p>We accept: checks made out to Galaxy Guides, bank transfers via Zelle or Venmo, and cash. Regardless of your payment method, we will provide you with a receipt.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q4')">
+                <strong>What if the weather is bad on the night of my event?</strong>
+                <div class="answer" id="q4">
+                    <p>Bad weather and clouds are the arch nemesis of all observational astronomers! As we all know, predicting the weather is tricky business and we can never guarentee conditions good enough to observe. In the week leading up to your event, we will monitor the weather predictions in your area. If it looks highly unlikely to be favorable, we will contact you no less than 24 hours out from your event to discuss options. You may cancel at this time and only forfeit your $50 reservation deposit. Or we can choose to go ahead with the event as planned. In the scenario where your Galaxy Guide is on site for your event but cannot observe through clouds or rain, we will charge only half the quoted price per hour and you may excuse the guide at any time after the first hour. However, we do offer backup plans to get the most out of your Galaxy Guides experience regardless of weather, see <a href="services.html" target="_blank" style="text-decoration: none; color: blue;">Services</a>. We want to be very reasonable and understanding when it comes to weather.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q5')">
+                <strong>What astronomical objects will I see at my event with a Galaxy Guide?</strong>
+                <div class="answer" id="q5">
+                    <p>Depending on the time of year, time of night, and location of your event, different astronomical objects will be available for viewing. As part of the process of confirming your event, we will provide you with a list of stars, constellations, the phase of the Moon, planets, galaxies, and more that will be visible at your event. At your event, we will have star charts printed out for you and your guests to circle the objects they've seen and take home a unique party favor!</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q6')">
+                <strong>What communities do you serve?</strong>
+                <div class="answer" id="q6">
+                    <p>We are based in the Los Angeles area. For now, we are limited to taking on events only within the greater Southern California area. However, we are moderately flexible and open to discussing options. If you have a very special event outside of Southern California, we are open to making arangements that include travel reimbursment. Reach out to us at booking@galaxy-guides.com to discuss further.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q7')">
+                <strong>What happens if a telescope breaks at my event?</strong>
+                <div class="answer" id="q7">
+                    <p>We take great care to minimize the possiblity of damage to our equipment. If an event guest does damage a telescope, we will assess the damage and its potential for being fixed, but ultimately the event host is responsible.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q8')">
+                <strong>What is your tipping policy?</strong>
+                <div class="answer" id="q8">
+                    <p>Our guides always appreciate a tip, but never expect one.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q9')">
+                <strong>I had a great guide at my last event, can I request the same guide for my next event?</strong>
+                <div class="answer" id="q9">
+                    <p>Yes! We hope these kinds of connections are fostered between our guides and our clients. While we can't guarentee the same guide based on scheduling, we will work with you to try to make this possible.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q10')">
+                <strong>Is there a way to check if my event's date is already booked?</strong>
+                <div class="answer" id="q10">
+                    <p>At this time, the best way to see if a Galaxy Guide is available for your event is to email us at booking@galaxy-guides.com. We are working on building out a more sophisticated booking software which includes an availability calendar.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q15')">
+                <strong>Why are the guides mostly graduate students in astronomy?</strong>
+                <div class="answer" id="q15">
+                    <p>While graduate programs in STEM fields, including astronomy, do pay stipends to their students, often this is barely enough to live on, nevermind thrive on. Unfortunately, this creates a huge financial burden on the student and very often is itself a barrier to grad programs for people who do not have the resources of outside money, including familial, to support them. This disproportionally affects under-represented minorities and first generation students. The financial hardship of going to grad school is a tough choice to make for many, especially when often the alternative to a 5+ years of school making ~$25-30k per year is to work in the private sector and make 3-5x this amount per year. Galaxy Guides hopes to build a network of grad students who can supplement their stipends through private star-gazing shows to help alleviate a small portion of this burden, all while honing their public outreach and science communcation skills and sharing the astronomy that they love.</p>
+                </div>
+            </li>
+
+            <li class="faq-item" onclick="toggleAnswer('q16')">
+                <strong>Can I book a Galaxy Guide for a day time event?</strong>
+                <div class="answer" id="q16">
+                    <p>Yes! While of course we need night skies to see stars and galaxies, Galaxy Guides are trained to safely perform solar observing. Similarly, we can give a science talk at any time, regardless of day or night.</p>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Section 4: Site Map Panel -->
+    <section class="panel site-map">
+        <div class="sitemap-links">
+            <h3>Site Map</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="guides.html">Meet the Guides</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Contact Info</h3>
+            <p>Email: booking@galaxy-guides.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Galaxy Guides</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

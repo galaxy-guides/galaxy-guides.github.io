@@ -1,0 +1,534 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    overflow-x: scroll; /* Prevent horizontal overflow */
+}
+
+/* Top Menu Bar styling */
+.top-menu {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it's above other elements */
+}
+
+.company-name img {
+    margin: 0;
+    margin-right: 300px;
+}
+
+.navigation-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation-links li {
+    margin-right: 20px;
+}
+
+.navigation-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* General panel styling */
+.panel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section 1: Big Image with Text Banner */
+.big-image {
+    background: url('/Users/jack/Documents/Other/Personal/Business/website/photos/galaxynasa.jpeg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+.big-image .banner {
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+}
+
+/* Section 1: Big Image with Text Banner */
+.big-image-2 {
+    text-align: center;
+    height: 10vh; /* Adjust the height as needed */
+}
+
+.big-image-2 .banner-2 {
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    font-size:30px;
+}
+
+/* Section 1: Big Image with Text Banner */
+.big-image-3 {
+  background: url('/Users/jack/Documents/Other/Personal/Business/website/GG_Logo.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  margin-top: 80px;
+  height: 80vh;
+  /* height: 600px;
+  width: 1440px; */
+}
+
+.big-image-3 .banner-3 {
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+}
+
+/* Section 2: Four Horizontal Sub-Panels with Images */
+.four-sub-panels {
+    background-color: #f4f4f4;
+    flex-direction: row;
+}
+
+.sub-panel {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sub-panel img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* Section 3: Site Map Links and Contact Info */
+.site-map {
+    background-color: black;
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.site-map .sitemap-links,
+.site-map .contact-info {
+    width: 45%;
+}
+
+/* Remove bullet points from site map links */
+.sitemap-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap-links li {
+    margin-bottom: 10px; /* Add spacing between links */
+}
+
+.sitemap-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sitemap-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+
+/* ... (previous styles remain the same) */
+
+/* Section 1: Full Image Panel */
+.full-image {
+    height: 80vh; /* Adjust the height as needed */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.full-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Section 2 and Section 3: Image-Text Panels */
+.image-text-panel {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+}
+
+.image-text-panel img {
+    max-width: 90%; /* Take up the full width of the container */
+    height: auto;
+}
+
+/* Center the text paragraph within its column */
+.image-text-panel .text-content {
+    text-align: left;
+    margin: 0;
+    /* padding: 20px */
+}
+/* Specific styling for the left image in Panel 2 */
+.image-text-panel-left img {
+    grid-column: 1 / 2; /* Occupy the first column */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Specific styling for the text paragraph in Panel 2 */
+.image-text-panel-left .text-content {
+    grid-column: 2 / 3; /* Occupy the second column */
+    font-size: 38px;
+    margin-right: 80px;
+    margin-left: -100px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+/* Specific styling for the text paragraph in Panel 3 */
+.image-text-panel-right .text-content {
+    grid-column: 1 / 2; /* Occupy the first column */
+    font-size: 38px;
+    margin-right: -50px;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+/* Specific styling for the right image in Panel 3 */
+.image-text-panel-right img {
+    grid-column: 2 / 3; /* Occupy the second column */
+    margin-right: 20px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+/* Section 2 and Section 3: Image-Text Panels */
+.image-text-panel-2 {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel-content-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+}
+
+.image-text-panel-2 img {
+    max-width: 90%; /* Take up the full width of the container */
+    height: auto;
+}
+
+/* Center the text paragraph within its column */
+.image-text-panel-2 .text-content-2 {
+    text-align: left;
+    margin: 0;
+    /* padding: 20px */
+}
+/* Specific styling for the left image in Panel 2 */
+.image-text-panel-left-2 img {
+    grid-column: 1 / 2; /* Occupy the first column */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Specific styling for the text paragraph in Panel 2 */
+.image-text-panel-left-2 .text-content-2 {
+    grid-column: 2 / 3; /* Occupy the second column */
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: -100px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+/* Specific styling for the text paragraph in Panel 3 */
+.image-text-panel-right-2 .text-content-2 {
+    grid-column: 1 / 2; /* Occupy the first column */
+    font-size: 20px;
+    margin-right: -50px;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+/* Specific styling for the right image in Panel 3 */
+.image-text-panel-right-2 img {
+    grid-column: 2 / 3; /* Occupy the second column */
+    margin-right: 20px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 4: Site Map Links and Contact Info */
+.site-map {
+    background-color: black;
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.site-map .sitemap-links,
+.site-map .contact-info {
+    width: 45%;
+}
+
+/* Remove bullet points from site map links */
+.sitemap-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap-links li {
+    margin-bottom: 10px; /* Add spacing between links */
+}
+
+.sitemap-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sitemap-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    width: 98.6%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+/* ... (previous styles remain the same) */
+
+/* Section 2: FAQ Panel */
+.faq-panel {
+    background-color: #f4f4f4;
+    text-align: left; /* Align text to the left */
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-item {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column; /* Ensure the items are in a column */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+.faq-item strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.answer {
+    width: 100%;
+    display: none;
+}
+
+/* Ensure the answer text is also aligned to the left */
+.answer p {
+    text-align: left;
+}
+
+/* Add hover effect to highlight clickable */
+.faq-item:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Section 2: Executive Board Bios */
+.executive-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.executive-member {
+    width: 75%; /* Adjust the width as needed */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex; /* Use flex to arrange items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.executive-member img {
+    max-width: 300px; /* Adjust the maximum width of the image */
+    height: auto;
+    border-radius: 8px; /* Optional: Add border-radius for a rounded image */
+    margin-right: 20px; /* Add spacing between image and text */
+    margin-left: -100px; /* Add spacing between image and text */
+    margin-top: 100px; /* Add spacing between image and text */
+    margin-bottom: 100px; /* Add spacing between image and text */
+
+}
+
+.executive-member div {
+    flex-grow: 1; /* Allow the text to take remaining width */
+}
+
+.executive-member h3, .executive-member p {
+    margin: 10px 0;
+}
+
+
+
+
+
+/* Section 2: Executive Board Bios */
+.executive-board-2 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.executive-member-2 {
+    width: 75%; /* Adjust the width as needed */
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    display: flex; /* Use flex to arrange items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.executive-member-2 img {
+    /* max-width: 250px; /* Adjust the maximum width of the image */
+    /* height: auto; */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded image */
+    margin-right: 50px; /* Add spacing between image and text */
+    margin-left: -80px; /* Add spacing between image and text */
+    margin-top: 30px; /* Add spacing between image and text */
+    margin-bottom: 30px; /* Add spacing between image and text */
+}
+
+.executive-member-2 div {
+    flex-grow: 1; /* Allow the text to take remaining width */
+}
+
+.executive-member-2 h3, .executive-member-2 p {
+    margin: 10px 0;
+}
+
+
+/* Section 2: Event Booking Form */
+.event-booking-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.event-booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.event-booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.event-booking-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.event-booking-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Section 1: Large Centered Text */
+.large-centered-text {
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding as needed */
+    background-color: black;
+    color: #fff;
+}
+
+.large-centered-text h2 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.large-centered-text p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin: 10px 0; /* Adjust margin for both top and bottom */
+}
