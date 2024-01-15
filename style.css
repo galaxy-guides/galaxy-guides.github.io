@@ -53,7 +53,7 @@ body {
 
 /* Section 1: Big Image with Text Banner */
 .big-image {
-    background: url('/Users/jack/Documents/Other/Personal/Business/website/photos/galaxynasa.jpeg') center/cover no-repeat;
+    background: url('photos/galaxynasa.jpeg') center/cover no-repeat;
     color: #fff;
     text-align: center;
     height: 80vh; /* Adjust the height as needed */
@@ -78,7 +78,7 @@ body {
 
 /* Section 1: Big Image with Text Banner */
 .big-image-3 {
-  background: url('/Users/jack/Documents/Other/Personal/Business/website/GG_Logo.jpg') center/cover no-repeat;
+  background: url('photos/GG_Logo.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   margin-top: 80px;
